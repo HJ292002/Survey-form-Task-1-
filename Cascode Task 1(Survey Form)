@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey form</title> 
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+   <h1 id="title">Sun Cuisines Dinning Survey Form</h1>
+   <form id="form" method="get" action="thanks.html"
+   
+   <p id="description">Thank you for dining with us at Sun Cuisines.To help us maintain a high quality of service, please provide us with feedback by filling in the information below </p>
+
+<form action="" id="survey-form">
+  <fieldset>
+       <label id="name-label"><font color="black">Name</font><input type="text" required placeholder="Enter your name" id="name"></label>
+
+       <label id="email-label"><font color="black">Email</font> <input type="email" required placeholder="Enter your Email" id="email"></label>
+       
+       <label id="number-label"><font color="black">Age</font><input type="number" id="number" placeholder="Enter your age"required min=13 max=100 /></label>
+   </fieldset>
+
+  <fieldset> 
+	     <label><font color="black">
+	        How likely is that you recommend Sun Cuisines restaurant to a friend?
+			</font>
+	          <label class="radio_css">  <input type="radio" name="recommendation" value="1"> <font color="white" >Definitely </font>
+	          </label>
+	          <label class="radio_css">
+	            <input type="radio" name="recommendation"value="2"><font color="white"> Not Sure</font>
+	          </label>
+	          <label class="radio_css">  
+	        <input type="radio" name="recommendation" value="3"> <font color="white">May Be</font>
+	        </label>
+	      </label>  
+   </fieldset>
+   
+   <fieldset>  
+	      <label><font color="black">What was the most favourite part of your dinning experince? </font>
+	        <select id="dropdown">
+	            <option value="0"><font color="black">Select an Option</font></option>
+	            <option value="1"><font color="black">Quality of food</font></option>
+	            <option value="2"><font color="black">Portion size</font></option>
+	            <option value="3"><font color="black">Service </font></option>
+	            <option value="4"><font color="black">Cleanliness </font></option>
+	            <option value="5"><font color="black">Overall Value </font></option>
+	        </select>  
+	      </label>
+     </fieldset>
+     
+     <fieldset>
+	      <label><font color="black">
+	         What would you like to see improved? (Check all that apply)</font>
+	
+	         <label class="checkbox_css"><input type="checkbox" value="1"><font color="white">Staff</font></label>
+	         <label class="checkbox_css"><input type="checkbox" value="2"><font color="white">Quality of Food</font></label>
+	         <label class="checkbox_css"><input type="checkbox" value="3"><font color="white">Ambience</font></label>
+	         <label class="checkbox_css"><input type="checkbox" value="4"><font color="white">Pricing</font></label>
+	         <label class="checkbox_css"><input type="checkbox" value="5"><font color="white">Ease of Ordering</font></label>
+	         <label class="checkbox_css"><input type="checkbox" value="6"><font color="white">Menu options</font></label>
+	      </label>
+	      <label><font color="black">Any Comments or Suggestions?</font><textarea rows="8" cols=40 placeholder="Enter your comments/suggestions here..."></textarea>
+   </fieldset>  
+<input type="submit" value="submit">
+	
+ </form> 
+</body>
+</html>
